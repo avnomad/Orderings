@@ -1,0 +1,8 @@
+syntax: regexp
+Debug/*
+Release/*
+ipch/*
+syntax: glob
+Orderings.opensdf
+Orderings.sdf
+Orderings.suo
