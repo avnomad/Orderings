@@ -14,16 +14,20 @@ typedef struct head_tag
 	node *prev;
 } head;
 
-void metathesis(int n,int k);
+void orderings(int n,int k);
 
 int main()
 {
-	metathesis(4,4);
+	unsigned int n,k;
+
+	printf("Give the number of elements in the set and it's subsets: ");
+	scanf("%u%u",&n,&k);
+	orderings(n,k);
 	system("PAUSE");
 	return 0;
 }
 
-void metathesis(int n,int k)
+void orderings(int n,int k)
 {
 	node **subset,*temp;
 	head set;
